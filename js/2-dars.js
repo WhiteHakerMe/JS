@@ -11,7 +11,15 @@
 // }            // Str ga funksia tuzish code
 // contextStr(prompt("Matin kriting"))
 
-function FindAge (num) {
-    console.log(new Date().getFullYear() - num);
+// function FindAge (num) {
+//     console.log(new Date().getFullYear() - num);
+// }
+// FindAge(prompt("tug'ilgan Yilingizni kriting")) //Dehqoncha usul
+function Borthday(year) {
+    if (year >= new Date().getFullYear()) {
+        console.log("Hatolik");
+    } else {
+        console.log(`Siz ${new Date().getFullYear() - year} yoshdasiz`);
+    }
 }
-FindAge(prompt("tug'ilgan Yilingizni kriting"))
+Borthday(prompt("Tug'ilgan Yilingizni kriting"))
