@@ -6,7 +6,12 @@
 // }
 // FirstNum(+prompt("brinchi sonni kriting"), +prompt("ikki sonni kriting")) // Buyerda Number == sonlarga funksia tuzilgan
 
-function contextStr (text) {
-    console.log(text.split("").reverse("").join("").toLowerCase());
+// function contextStr (text) {
+//     console.log(text.split("").reverse("").join("").toLowerCase());
+// }            // Str ga funksia tuzish code
+// contextStr(prompt("Matin kriting"))
+
+function FindAge (num) {
+    console.log(new Date().getFullYear() - num);
 }
-contextStr(prompt("Matin kriting"))
+FindAge(prompt("tug'ilgan Yilingizni kriting"))
